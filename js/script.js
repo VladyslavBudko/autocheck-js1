@@ -1,15 +1,12 @@
-function formatMessage(message, maxLength) {
-    let result;
-    // Change code below this line
-  if (message.length <= maxLength) {
-  result = message;
+function checkForSpam(message) {
+  let result;
+  // Change code below this line
+  const lowerCaseMessage = message.toLowerCase();
+  if (lowerCaseMessage.includes("spam") || lowerCaseMessage.includes("sale")) {
+    result = true;
+  } else {
+    result = false;
   }
-  
-  else {
-    result = message.slice(0, maxLength) + '...'
-  }
-  
-    /// Change code above this line
-    return result;
-  }
-  
+  // Change code above this line
+  return result;
+}
