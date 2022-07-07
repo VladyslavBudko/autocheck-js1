@@ -1,26 +1,8 @@
-function getShippingCost(country) {
-  let message;
-  // Change code below this line
-  switch (country) {
-    case "China":
-      message = "Shipping to China will cost 100 credits";
-      break;
+const courseTopic = "JavaScript essentials";
+// Change code below this line
 
-    case "Chile":
-      message = "Shipping to Chile will cost 250 credits";
-      break;
+const courseTopicLength = courseTopic.length;
+const firstElement = courseTopic[0];
+const lastElement = courseTopic[courseTopic.length - 1];
 
-    case "Australia":
-      message = "Shipping to Australia will cost 170 credits";
-      break;
-
-    case "Jamaica":
-      message = "Shipping to Jamaica will cost 120 credits";
-      break;
-
-    default:
-      message = "Sorry, there is no delivery to your country";
-  }
-  // Change code above this line
-  return message;
-}
+// Change code above this line
