@@ -1,8 +1,15 @@
-const courseTopic = "JavaScript essentials";
-// Change code below this line
-
-const courseTopicLength = courseTopic.length;
-const firstElement = courseTopic[0];
-const lastElement = courseTopic[courseTopic.length - 1];
-
-// Change code above this line
+function formatMessage(message, maxLength) {
+    let result;
+    // Change code below this line
+  if (message.length <= maxLength) {
+  result = message;
+  }
+  
+  else {
+    result = message.slice(0, maxLength) + '...'
+  }
+  
+    /// Change code above this line
+    return result;
+  }
+  
