@@ -1,14 +1,14 @@
-function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
-    let message;
-    // Change code below this line
-  let totalPrice = pricePerDroid * orderedQuantity;
-  if (totalPrice > customerCredits) {
-    message = "Insufficient funds!";
+function checkStorage(available, ordered) {
+  let message;
+  // Change code below this line
+  if (ordered === 0) {
+    message = "There are no products in the order!";
+  } else if (ordered > available) {
+    message = "Your order is too large, there are not enough items in stock!";
   } else {
-    customerCredits = customerCredits - totalPrice;
-    message = `You ordered ${orderedQuantity} droids, you have ${customerCredits} credits left`;
+    message = "The order is accepted, our manager will contact you";
   }
-    // Change code above this line
-    return message;
-  }
-  
+
+  // Change code above this line
+  return message;
+}
