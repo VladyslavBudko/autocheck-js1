@@ -1,20 +1,11 @@
-function slugify(title) {
+function makeArray(firstArray, secondArray, maxLength) {
   // Change code below this line
 
-
-  // let titleToLower = "";
-
-
-  const titleToLower = title.toLowerCase();
-    console.log(titleToLower);
-
-
-  const titleToLowerArrey = titleToLower.split(" ");
-  console.log(titleToLowerArrey);
-
-return titleToLowerArrey.join('-');
+const mix = firstArray.concat(secondArray);
+console.log(mix);
+return mix.slice(0, maxLength)
 
   // Change code above this line
 }
 
-slugify("Arrays for begginers");
+makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4);
