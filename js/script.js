@@ -1,14 +1,20 @@
-function calculateEngravingPrice(message, pricePerWord) {
+function slugify(title) {
   // Change code below this line
-  const messageArrey = message.split(" ");
-  console.log(messageArrey);
-  const messageNum = messageArrey.length;
-  console.log(messageNum);
-  const price = (messageNum * pricePerWord);
-  console.log(price);
 
-  return price;
+
+  // let titleToLower = "";
+
+
+  const titleToLower = title.toLowerCase();
+    console.log(titleToLower);
+
+
+  const titleToLowerArrey = titleToLower.split(" ");
+  console.log(titleToLowerArrey);
+
+return titleToLowerArrey.join('-');
+
   // Change code above this line
 }
 
-calculateEngravingPrice("JavaScript is in my blood", 10);
+slugify("Arrays for begginers");
