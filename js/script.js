@@ -1,14 +1,9 @@
-const defaultSettings = {
-  theme: "light",
-  public: true,
-  withPassword: false,
-  minNumberOfQuestions: 10,
-  timePerQuestion: 60,
-};
-const overrideSettings = {
-  public: false,
-  withPassword: true,
-  timePerQuestion: 30,
-};
-// Change code below this line
-const finalSettings = {...defaultSettings, ...overrideSettings};
+function makeTask(data) {
+  const completed = false;
+  const category = "General";
+  const priority = "Normal";
+  // Change code below this line
+  const newTask = {completed, category, priority, ...data};
+return newTask;
+  // Change code above this line
+}
