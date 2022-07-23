@@ -1,18 +1,15 @@
-const products = [
-  { name: "Radar", price: 1300, quantity: 4 },
-  { name: "Scanner", price: 2700, quantity: 3 },
-  { name: "Droid", price: 400, quantity: 7 },
-  { name: "Grip", price: 1200, quantity: 9 },
-];
+const highTemperatures = {
+  yesterday: 28,
+  today: 26,
+  tomorrow: 33,
+};
+// Change code below this line
+const { yesterday: highYesterday, today: highToday, tomorrow: highTomorrow, icon: highIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" } = highTemperatures;
 
-function calculateTotalPrice(productName) {
-  // Пиши код ниже этой строки
-for (const product of products) {
-if (productName === product.name) {
-  return product.price * product.quantity;
-}
-}
-return 0;
+// const highYesterday = highTemperatures.yesterday;
+// const highToday = highTemperatures.today;
+// const highTomorrow = highTemperatures.tomorrow;
+// const highIcon = highTemperatures.icon;
 
-  // Пиши код выше этой строки
-}
+// Change code above this line
+const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
