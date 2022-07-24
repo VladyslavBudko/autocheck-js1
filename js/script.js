@@ -1,12 +1,11 @@
 const atTheOldToad = {
   potions: ["Speed potion", "Dragon breath", "Stone skin"],
-  removePotion(potionName) {
+  updatePotionName(oldName, newName) {
     // Change code below this line
-if (this.potions.includes(potionName)) {
-  const index = this.potions.indexOf(potionName);
-  this.potions.splice(index, 1);
+if (this.potions.includes(oldName)) {
+  const item = this.potions.indexOf(oldName);
+  this.potions.splice(item, 1, newName);
 }
-
 
     // Change code above this line
   },
