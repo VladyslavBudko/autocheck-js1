@@ -1,13 +1,13 @@
-const bookShelf = {
-  books: ["The last kingdom", "Haze", "The guardian of dreams"],
-  updateBook(oldName, newName) {
+const atTheOldToad = {
+  potions: ["Speed potion", "Dragon breath", "Stone skin"],
+  removePotion(potionName) {
     // Change code below this line
-    const index = this.books.indexOf(oldName);
-    this.books.splice(index, 1, newName);
-    console.log(this.books);
-    return this.books;
+if (this.potions.includes(potionName)) {
+  const index = this.potions.indexOf(potionName);
+  this.potions.splice(index, 1);
+}
+
+
     // Change code above this line
   },
 };
-
-bookShelf.updateBook("Haze", "Dungeon chronicles");
