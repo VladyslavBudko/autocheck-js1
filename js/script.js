@@ -45,8 +45,6 @@ const atTheOldToad = {
         return `Potion ${oldName.name} is updated!`;
       }
     }
-    console.log(potionName);
-
     return `Potion ${oldName} is not in inventory!`;
   },
   // Change code above this line
