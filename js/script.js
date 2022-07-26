@@ -49,3 +49,5 @@ const atTheOldToad = {
   },
   // Change code above this line
 };
+
+console.log(potionName);
