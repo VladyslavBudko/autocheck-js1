@@ -1,6 +1,4 @@
 // Change code below this line
+const calculateTotalPrice = (quantity, pricePerItem) =>  quantity * pricePerItem;
 
-const calculateTotalPrice = (quantity, pricePerItem) => {
-  // Change code above this line
-  return quantity * pricePerItem;
-}
+// Change code above this line
