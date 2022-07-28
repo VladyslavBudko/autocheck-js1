@@ -8,10 +8,10 @@ function filterArray(numbers, value) {
   //   }
   // }
 
-  numbers.forEach(function (number) {
+  numbers.forEach( (number) => {
     if (number > value) {
       filteredNumbers.push(number);
-    }
+    };
   });
 
   // Change code above this line
