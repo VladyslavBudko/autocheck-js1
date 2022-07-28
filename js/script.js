@@ -1,15 +1,19 @@
-function calculateTotalPrice(orderedItems) {
-  let totalPrice = 0;
+function filterArray(numbers, value) {
+  const filteredNumbers = [];
   // Change code below this line
 
-  // for (let i = 0; i < orderedItems.length; i += 1) {
-  //   totalPrice += orderedItems[i];
+  // for (let i = 0; i < numbers.length; i += 1) {
+  //   if (numbers[i] > value) {
+  //     filteredNumbers.push(numbers[i]);
+  //   }
   // }
 
-  orderedItems.forEach(function (number) {
-    totalPrice += number;
+  numbers.forEach(function (number) {
+    if (number > value) {
+      filteredNumbers.push(number);
+    }
   });
 
   // Change code above this line
-  return totalPrice;
+  return filteredNumbers;
 }
