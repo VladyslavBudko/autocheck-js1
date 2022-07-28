@@ -6,6 +6,10 @@ function calculateTotalPrice(orderedItems) {
     totalPrice += orderedItems[i];
   }
 
+  calculateTotalPrice.forEach(function (orderedItems) {
+    totalPrice += orderedItems;
+  })
+
   // Change code above this line
   return totalPrice;
 }
