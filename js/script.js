@@ -1,19 +1,19 @@
-function filterArray(numbers, value) {
-  const filteredNumbers = [];
+function getCommonElements(firstArray, secondArray) {
+  const commonElements = [];
   // Change code below this line
 
-  // for (let i = 0; i < numbers.length; i += 1) {
-  //   if (numbers[i] > value) {
-  //     filteredNumbers.push(numbers[i]);
+  // for (let i = 0; i < firstArray.length; i += 1) {
+  //   if (secondArray.includes(firstArray[i])) {
+  //     commonElements.push(firstArray[i]);
   //   }
   // }
 
-  numbers.forEach( (number) => {
-    if (number > value) {
-      filteredNumbers.push(number);
-    };
+  firstArray.forEach( (elem1) => {
+    if (secondArray.includes(elem1)) {
+      commonElements.push(elem1);
+    }
   });
 
+  return commonElements;
   // Change code above this line
-  return filteredNumbers;
 }
