@@ -1,13 +1,13 @@
 // Change code below this line
-const filterArray = (numbers, value) => {
-  const filteredNumbers = [];
+const getCommonElements = (firstArray, secondArray) => {
+  const commonElements = [];
 
-  numbers.forEach((number) => {
-    if (number > value) {
-      filteredNumbers.push(number);
+  firstArray.forEach((element) => {
+    if (secondArray.includes(element)) {
+      commonElements.push(element);
     }
   });
 
   // Change code above this line
-  return filteredNumbers;
+  return commonElements;
 }
