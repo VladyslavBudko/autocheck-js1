@@ -1,9 +1,8 @@
+const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
 // Change code below this line
-// const getUserEmails = users => {
-    
 
-//   };
+const evenNumbers = numbers.filter(number => number % 2 === 0);
+console.log(evenNumbers);
 
-
-const getUserEmails = users => users.map( user => user.email);
-// Change code above this line
+const oddNumbers = numbers.filter(number => number % 2 !== 0);
+console.log(oddNumbers);
