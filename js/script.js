@@ -1,22 +1,10 @@
-const books = [
-  {
-    title: "The Last Kingdom",
-    author: "Bernard Cornwell",
-    genres: ["adventure", "history"],
-  },
-  {
-    title: "Beside Still Waters",
-    author: "Robert Sheckley",
-    genres: ["fiction"],
-  },
-  {
-    title: "Redder Than Blood",
-    author: "Tanith Lee",
-    genres: ["horror", "mysticism"],
-  },
-];
 // Change code below this line
+// const getUserNames = users => {
+//   };
 
-const genres = books.flatMap(book => book.genres);
+// const getUserNames = users => users.map(user => user.name);
 
-console.log(genres);
+const getUserNames = users => users.map(user => {return user.name});
+
+
+  // Change code above this line
