@@ -151,3 +151,21 @@ const getTotalFriendCount = users => {
   return users.reduce((total, friend) => friend.friends.length + total, 0)
 };
 // Change code above this line
+
+
+// 38
+const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+const authors = [
+  "Tanith Lee",
+  "Bernard Cornwell",
+  "Robert Sheckley",
+  "Fyodor Dostoevsky",
+];
+// Change code below this line
+
+const ascendingReleaseDates = [...releaseDates].sort();
+
+const alphabeticalAuthors = [...authors].sort();
+
+
+// 39
