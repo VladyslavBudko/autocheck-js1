@@ -139,3 +139,15 @@ const players = [
 
 const totalAveragePlaytimePerGame = players.reduce((averege, player) =>
 player.playtime / player.gamesPlayed + averege, 0);
+
+
+//36 Change code below this line
+const calculateTotalBalance = users => users.reduce((total, user) => user.balance + total, 0);
+// Change code above this line
+
+
+//37 Change code below this line
+const getTotalFriendCount = users => {
+  return users.reduce((total, friend) => friend.friends.length + total, 0)
+};
+// Change code above this line
