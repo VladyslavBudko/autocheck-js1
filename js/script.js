@@ -82,3 +82,9 @@ const eachElementInSecondIsOdd = secondArray.every(isOdd => isOdd % 2 !==0);
 const eachElementInThirdIsEven = thirdArray.every(isEven => isEven % 2 === 0);
 const eachElementInThirdIsOdd = thirdArray.every(isOdd => isOdd % 2 !==0);
 // 
+
+//31 Change code below this line
+const isEveryUserActive = (users) => users.every(user => user.isActive)
+// Change code above this line
+
+
