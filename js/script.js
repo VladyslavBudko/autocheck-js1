@@ -285,9 +285,18 @@ const getSortedFriends = (users) =>
 
 // Change code above this line
 
-const uniqueSortedCourses = students
-  .flatMap((student) => student.courses)
-  .filter((course, index, array) => array.indexOf(course) === index)
-  .sort((a, b) => a.localeCompare(b));
+// const uniqueSortedCourses = students
+//   .flatMap((student) => student.courses)
+//   .filter((course, index, array) => array.indexOf(course) === index)
+//   .sort((a, b) => a.localeCompare(b));
 
-console.log(uniqueSortedCourses); // ["biology", "science", "literature", "mathematics", "physics"]
+// console.log(uniqueSortedCourses); // ["biology", "science", "literature", "mathematics", "physics"]
+
+
+// 48
+// Change code below this line
+const getTotalBalanceByGender = (users, gender) => [...users]
+.filter(user => user.gender === gender)
+.reduce((total, user) => total + user.balance, 0)
+
+// Change code above this line
