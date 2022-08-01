@@ -88,3 +88,21 @@ const isEveryUserActive = (users) => users.every(user => user.isActive)
 // Change code above this line
 
 
+// 32
+const firstArray = [26, 94, 36, 18];
+const secondArray = [17, 61, 23];
+const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// Change below this line
+
+const anyElementInFirstIsEven = firstArray.some(isEven => isEven % 2 === 0);
+const anyElementInFirstIsOdd = firstArray.some(isOdd => isOdd % 2 !==0);
+
+const anyElementInSecondIsEven = secondArray.some(isEven => isEven % 2 === 0);
+const anyElementInSecondIsOdd = secondArray.some(isOdd => isOdd % 2 !==0);
+
+const anyElementInThirdIsEven = thirdArray.some(isEven => isEven % 2 === 0);
+const anyElementInThirdIsOdd = thirdArray.some(isOdd => isOdd % 2 !==0);
+// 
+
+
+
